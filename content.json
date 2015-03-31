@@ -1,0 +1,27 @@
+[
+    {
+        "id": "overview",
+        "heading": "Company Overview",
+        "content": "r. Anthony enterprises, LLC (rAe) was founded by Rocco A. Piacentino in 2011 as an oil field service and energy development company. rAe recognized early on that the infrastructure required to assist America’s transition to alternative fuels, such as natural gas, was lacking, and therefore,  rAe has evolved in becoming a leader in the alternative fuel station build and service. To date, rAe has built stations in eight states around the country proving its far-reaching capability."
+    },
+    {
+        "id": "focus",
+        "heading": "Market Focus",
+        "content": "rAe is focused on the alternative energy markets because it firmly believes this is one the area where companies can effectively and immediately lower their fuel costs, but also safely project well into the future. rAe understands the challenges related to traditional energy resources that face communities and rAe provides innovative, effective solutions to those challenges. From natural gas to propane, rAe has the experience to assist with your company’s transition to alternative fuels thus ensuring your company reaps the benefits of America’s vast energy resources. rAe leverages its  expertise in technology, welding and business development to meet its clients’ specific objectives and to build successful ventures with its strategic partners."
+    },
+    {
+        "id": "sustain",
+        "heading": "Community and Sustainablity",
+        "content": "rAe is committed to building long lasting relationships in the communities where it conducts business and it does that by engaging  local businesses during all phases of the project rather than relying solely on non-local contractors. Sustainability of the environment is an integral part of rAe’s strategic vision. Through responsible business practices, rAe’s is committed to adding long term value to the communities rAe services."
+    },
+    {
+        "id": "charity",
+        "heading": "Charity and Volunteerism",
+        "content": "rAe is proud that its owners and employees actively take part in charitable initiatives and community outreach programs by volunteering their time and energies to such programs as Special Olympics (Craig’s activity) and (Rocco’s activity?).  Volunteerism forms another key aspect of rAe’s strategic vision. rAe believes that by giving back to the community in a non-remunerative fashion, a person receives an in-kind contribution in return in the form of personal satisfaction and well-being. rAe is committed to working toward a greener community in every way imaginable."
+    },
+    {
+        "id": "contact",
+        "heading": "Contact Us",
+        "content": "<div><a title=\"Info\" href=\"mailto:info@ranthonyent.com \">info@ranthonyent.com </a></div><form class=\"form\"><div class=\"col-md-8 col-md-offset-2\"><div class=\"form-group \"><label for=\"name\">Name</label><input type=\"text\" class=\"form-control\" id=\"name\" placeholder=\"first last\"></div><div class=\"form-group\"><label for=\"email\">Email</label><input type=\"email\" class=\"form-control\" id=\"email\" placeholder=\"email@example.com\"></div><div class=\"form-group\"><label for=\"phone\">Phone</label><input type=\"tel\" class=\"form-control\" id=\"phone\" placeholder=\"(555)555-5555\"></div><div class=\"form-group\"><label for=\"comment\">Comment</label><textarea class=\"form-control\" id=\"comment\" rows=\"5\"></textarea></div><button class=\"btn btn-primary\">Submit</button></div></form>"
+    }
+]
