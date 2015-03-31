@@ -24,8 +24,8 @@ var server = new hapi.Server({
 });
 
 server.connection({
-    //host: 'localhost',
-    port: 8080
+    host: 'americanaxe.com',
+    port: 80
 });
 
 server.route({
