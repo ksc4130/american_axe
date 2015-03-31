@@ -28,6 +28,11 @@ server.connection({
     port: 80
 });
 
+// server.connection({
+//     // host: 'americanaxe.com',
+//     port: 8080
+// });
+
 server.route({
     method: 'GET',
     path: '/file/{filename*}',

@@ -159,11 +159,10 @@ a:focus {
   }
 }
 .intro {
-  display: table;
+
   min-width: 100%;
   min-height: 100%;
   padding: 100px 0;
-  text-align: center;
   color: #ccc;
   background: url(/file/css/img/handles.jpg) no-repeat bottom center scroll;
   background-color: #fff;
@@ -171,20 +170,30 @@ a:focus {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+
 }
-.intro .intro-body {
+
+.intro .intro-tint {
+    text-align: center;
+    display: table;
+    background-color: rgba(0, 0, 0, .3);
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.intro .intro-tint .intro-body {
   display: table-cell;
   vertical-align: middle;
-  background-color: rgba(0, 0, 0, .3);
+
 }
-.intro .intro-body .brand-heading {
-    color: #fff;
+.intro .intro-tint .intro-body .brand-heading {
+color: #fff;
   font-size: 40px;
   font-weight: 100 !important;
   font-family: "Courier New", Courier, monospace;
-  margin-bottom: -20px;
+  margin-bottom: -10px;
 }
-.intro .intro-body .intro-text {
+.intro .intro-tint .intro-body .intro-text {
     color: #fff;
   font-size: 18px;
 }
@@ -193,10 +202,10 @@ a:focus {
     height: 100%;
     padding: 0;
   }
-  .intro .intro-body .brand-heading {
+  .intro .intro-tint .intro-body .brand-heading {
     font-size: 100px;
   }
-  .intro .intro-body .intro-text {
+  .intro .intro-tint .intro-body .intro-text {
     font-size: 25px;
   }
 }
