@@ -163,7 +163,7 @@ a:focus {
   height: 100%;
   /*padding: 100px 0;*/
   color: #ccc;
-  background: url(/file/css/img/handles.jpg) no-repeat bottom center scroll;
+  background: url(/file/css/img/handles_raw.jpg) no-repeat bottom center scroll;
   background-color: #fff;
   -webkit-background-size: cover;
   -moz-background-size: cover;
