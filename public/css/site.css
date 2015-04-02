@@ -1,3 +1,12 @@
+#navigation { padding-bottom: 40px; width: 960px; margin: auto; text-align: center; text-transform: uppercase; overflow: hidden; font-family: 'Raleway', sans-serif; font-size: 13px; }
+#navigation ul:before, #navigation ul:after { background-color: #d0d0d0; content: ""; display: inline-block; height: 1px; bottom: .1em; position: relative; vertical-align: middle; width: 50%; }
+#navigation ul:before { right: 29px; margin-left: -50%; }
+#navigation ul:after { left: 29px; margin-right: -50%; }
+#navigation li { display: inline-block; padding: 10px 14px; }
+/*#navigation li:hover, #navigation li#active { background-color: #f6f6f6; color: #484848; }*/
+/*#navigation a:link, #navigation a:visited { color: inherit; }*/
+/*#navigation a:hover { }*/
+
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
   display: none !important;
 }

@@ -1,0 +1,91 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+.banner {
+  background: url('/file/css/img/handles_opt.jpg') no-repeat center scroll;
+  height: 400px;
+  width: 100%;
+  box-shadow: 0px 2px 10px #888, 0px -2px 10px #888;
+}
+
+.brand-head {
+  color: #000;
+  font-size: 100px;
+  font-weight: 100 !important;
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: -10px;
+}
+
+.slide {
+    -webkit-transition: -webkit-transform .7s ease-in-out;
+    -moz-transition: -moz-transform .7s ease-in-out;
+    -o-transition: -o-transform .7s ease-in-out;
+    transition: transform .7s ease-in-out;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.slide.ng-enter {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.slide.ng-enter.ng-enter-active, .slide.ng-leave {
+    position: absolute;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+
+.slide.ng-leave.ng-leave-active {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+}
+
+nav {
+  padding-bottom: 40px;
+  margin: auto;
+  text-align: center;
+  text-transform: uppercase;
+  overflow: hidden;
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+}
+
+nav ul:before, nav ul:after {
+  background-color: #d0d0d0;
+  content: "";
+  display: inline-block;
+  height: 1px; bottom: .1em;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+nav ul:before {
+  right: 29px;
+  margin-left: -50%;
+}
+
+nav ul:after {
+  left: 29px;
+  margin-right: -50%;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: #d0d0d0;
+  padding: 10px 10px;
+}
+
+nav ul li a:hover {
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
+/*#navigation li:hover, #navigation li#active { background-color: #f6f6f6; color: #484848; }*/
+/*#navigation a:link, #navigation a:visited { color: inherit; }*/
+/*#navigation a:hover { }*/
