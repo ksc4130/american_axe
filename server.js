@@ -1,6 +1,7 @@
 var hapi = require('hapi');
 var path = require('path');
 var fs = require('fs');
+var stripe = require("stripe")("sk_test_lWxJRcgmX8dy42podWM1Atfl");
 
 var content;
 
@@ -32,6 +33,39 @@ server.connection({
 //     // host: 'americanaxe.com',
 //     port: 8080
 // });
+
+server.route({
+  method: 'POST',
+  path: '/testCharge',
+  handler: function (req, reply) {
+    console.log('req payload', req.payload);
+    var charge = stripe.charges.create({
+      amount: req.payload.amount * 100, // amount in cents, again
+      currency: "usd",
+      source: req.payload.token.id,
+      description: "Test charge"
+    }, function(err, charge) {
+      if(err) {
+        reply({
+          succes: false,
+          err: err
+        });
+      }
+      if (err && err.type === 'StripeCardError') {
+        // The card has been declined
+        console.log('card was declined', err);
+      } else if(err) {
+        console.log('something happened', err);
+      } else {
+        console.log('good charge', charge);
+        reply({
+          success: true,
+          charge: charge
+        })
+      }
+    });
+  }
+});
 
 server.route({
     method: 'GET',
@@ -67,6 +101,14 @@ server.route({
     path: '/two',
     handler: function (req, reply) {
         reply.file('index2.html');
+    }
+});
+
+server.route({
+    method: 'GET',
+    path: '/stripe',
+    handler: function (req, reply) {
+        reply.file('testStripe.html');
     }
 });
 
