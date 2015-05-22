@@ -24,15 +24,15 @@ var server = new hapi.Server({
     }
 });
 
-server.connection({
-    host: 'americanaxe.com',
-    port: 80
-});
-
 // server.connection({
-//     // host: 'americanaxe.com',
-//     port: 8080
+//     host: 'americanaxe.com',
+//     port: 80
 // });
+
+server.connection({
+    // host: 'americanaxe.com',
+    port: 8080
+});
 
 server.route({
   method: 'POST',
@@ -101,6 +101,14 @@ server.route({
     path: '/two',
     handler: function (req, reply) {
         reply.file('index2.html');
+    }
+});
+
+server.route({
+    method: 'GET',
+    path: '/toh',
+    handler: function (req, reply) {
+        reply.file('toh.html');
     }
 });
 
