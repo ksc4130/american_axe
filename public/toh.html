@@ -24,7 +24,7 @@
         <div style="margin-top: 50px;" class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <h1>Moves: {{moves}} <small>min. moves: {{minMoves}}</small></h1>
+                    <h1>Moves: {{moves | number}} <small>min. moves: {{minMoves | number}}</small></h1>
                 </div>
                 <div class="col-md-8">
                     <button class="btn btn-success" ng-click="go()">Go</button>
