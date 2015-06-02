@@ -6,3 +6,5 @@ var subscriberSchema = mongoose.Schema({
 });
 
 var Subscriber = mongoose.model('Subscriber', subscriberSchema);
+
+exports.model = mongoose.model('Subscriber');

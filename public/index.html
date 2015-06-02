@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="app">
+<html lang="en" ng-app="app">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -13,7 +13,7 @@
     <link href="/file/css/site.css" rel="stylesheet">
 
 </head>
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<body ng-cloak ng-controller="mainCtrl" id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <header class="intro">
         <div class="intro-tint">
             <div class="intro-body">
@@ -21,7 +21,16 @@
                     <div class="row">
                         <div class="col-md-10 col-md-offset-1">
                             <h1 class="brand-heading">American Axe</h1>
-                            <p class="intro-text">Coming soon!</p>
+                            <p class="intro-text">Thank you for visiting American Axe. We are currently in the process of establishing our line of American Made products.</p>
+                            <h4 ng-show="submitted">Thank you!</h4>
+                            <form ng-hide="submitted" ng-submit="submit()" name="subscribeForm" class="form-inline">
+                                <div class="form-group">
+                                    <label for="email" class="form-control-label">Join our Axe Community:</label>
+                                    <input ng-model="email" placeholder="Email" type="email" id="email" name="email" class="form-control" required>
+                                </div>
+                                <button type="submit" class="btn btn-success" ng-disabled="subscribeForm.$invalid">Submit</button>
+                            </form>
+                            <!--<p>Visit our blog to get to know us (BLOG) / Join our Axe Community: (Email Sign-up) / Shop our Refurbished Axes (Shopify) (Etsy)</p>-->
                         </div>
                     </div>
                     <div class="row">
@@ -38,6 +47,11 @@
             </div>
         </div>
     </header>
+    <script src="/file/js/libs/jquery-2.1.1.min.js"></script>
+    <script src="/file/js/libs/angular.min.js"></script>
+
+    <script src="/file/js/app/subscribeApp.js"></script>
+
 <!--
     <article ng-controller="mainCtrl" class="content">
         <section ng-repeat="t in mainTmpls" id="{{t.id}}" class="content-section text-center">
